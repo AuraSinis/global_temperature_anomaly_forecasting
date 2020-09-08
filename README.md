@@ -30,14 +30,13 @@
 | World Carbon 1st Difference     | world_carbon_diff_1  | float64   | Yearly Change in the Global Carbon levels in equivalence to kilotons of CO2 (Annual) ($ppm/year$)                             |   |
 | World Carbon 2nd Difference     | world_carbon_diff_2  | float64   | Yearly Change in the Yearly Change in the Global Carbon levels in equivalence to kilotons of CO2 (Annual) ($ppm/(year^2)$)    |   |
 | Target                          | target               | float64   | The Temporal Anomaly 1st Difference, shifted once (to be predicted). (For example, 2002 has 2003's _temp_a_diff_1_ as it's _target_.            |   |
-<br>
-##### Performance Metrics<br>
+##### Performance Metrics <br>
 Mean Squared Error (MSE) is the primary metric considered for model benchmarking. <br>
-##### Results<br>
-A simple ridge regression model on some engineered dataset did well in predicting the change in annual global temperature anomaly, as well as annual global temperature anomaly itself.<br>
-##### Limitations<br>
+##### Results <br>
+A simple ridge regression model on some engineered dataset did well in predicting the change in annual global temperature anomaly, as well as annual global temperature anomaly itself. <br>
+##### Limitations <br>
 The model, while performing well, is fairly overfit.<br>
-#### Technical Pertinents<br>
+#### Technical Pertinents <br>
 Jupyter Labs, statsmodels, and sklearn were the primary libraries used for the implementation. 
 Models were evaluated by comparing their MSE scores against each other, and the R^2 values of each model on the testing and training data sets were used to examine for over/under fitting.
 
